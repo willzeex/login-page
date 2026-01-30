@@ -1,27 +1,22 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 
 <head>
     <meta charset="utf-8" />
-    <title>Entrar no Portal</title>
-    <link rel="stylesheet" href="jutro-theme.css" />
+    <title>Login</title>
 </head>
 
-<body class="gw-login">
+<body>
 
-    <div class="gw-container">
-        <img src="/assets/logo.svg" class="gw-logo" />
+    <h2>Entrar</h2>
 
-        <h1>Acesse sua conta</h1>
-        <p>Use seu e-mail corporativo para continuar</p>
+    <input id="email" type="email" placeholder="Email" />
+    <input id="password" type="password" placeholder="Senha" />
 
-        <!-- O Entra injeta os campos aqui -->
-        <form id="api"></form>
+    <button onclick="submit()">Entrar</button>
 
-        <footer>
-            <small>© Guidewire Portal</small>
-        </footer>
-    </div>
+    <!-- ESSENCIAL -->
+    <script src="https://yourtenant.b2clogin.com/static/tenant/templates/AzureBlue/js/selfasserted.js"></script>
 
 </body>
 
