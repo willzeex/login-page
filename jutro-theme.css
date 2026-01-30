@@ -1,0 +1,34 @@
+/* container do campo */
+.entry-item {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+/* ícone */
+.entry-item::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+}
+
+/* email */
+.entry-item:has(input[type="email"])::before {
+  background-image: url("/icons/mail.svg");
+}
+
+/* senha */
+.entry-item:has(input[type="password"])::before {
+  background-image: url("/icons/lock.svg");
+}
+
+/* espaço para o ícone */
+.entry-item input {
+  padding-left: 40px;
+}
